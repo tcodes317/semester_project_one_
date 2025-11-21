@@ -2,6 +2,7 @@ import Slider from "./Slider";
 import { Link } from "react-router-dom";
 import { useMemo } from "react";
 import RewardDetails from "./RewardDetails";
+import RedemptionConfirm from "./RedemptionConfirmed";
 
 function IncentivesRewards() {
   const Amount = ["5000", "18000", "2000", "3,500", "3,500"];
@@ -73,8 +74,13 @@ function IncentivesRewards() {
   return (
     <>
       <div className="relative">
-        <div className="absolute hiden w-full z-150 left-0 top-0">
-          <RewardDetails />
+        <div className="absolute w-full z-150 left-0 top-0">
+          <div className="hidden">
+            <RewardDetails />
+          </div>
+          <div className="hidden">
+            <RedemptionConfirm />
+          </div>
         </div>
         <div className="flex">
           <div className="lg:w-[300px] hidden lg:block bg-[#fff] z-10 absolute fixed bg-white">

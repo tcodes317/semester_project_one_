@@ -106,57 +106,98 @@ function RewardDetails() {
                 </div>
 
                 {selected === "cash" && (
-                  <div className="mt-5 border border-[#E1E1E1] p-4 rounded-xl space-y-3">
-                    <h1 className="text-xl font-bold">Convert to Cash</h1>
+                  <>
+                    <div className="mt-5 border border-[#E1E1E1] p-4 rounded-xl space-y-3">
+                      <h1 className="text-xl font-bold">Convert to Cash</h1>
 
-                    <div className="flex items-center justify-between">
-                      <p>Reward Value</p>
-                      <p>#5,000</p>
+                      <div className="flex items-center justify-between">
+                        <p>Reward Value</p>
+                        <p>#5,000</p>
+                      </div>
+
+                      <div className="flex items-center justify-between">
+                        <p>Conversion Fee (5%)</p>
+                        <p>-#250</p>
+                      </div>
+
+                      <div className="flex items-center justify-between font-bold">
+                        <p>Final Credit Amount</p>
+                        <p>#4,750</p>
+                      </div>
                     </div>
 
-                    <div className="flex items-center justify-between">
-                      <p>Conversion Fee (5%)</p>
-                      <p>-#250</p>
+                    <div className="py-4 pt-6">
+                      <div className="flex border bg-[#1967D266] border-[#E1E1E1] p-4 rounded-xl space-x-4">
+                        <img
+                          src="src/assets/info.png"
+                          className="w-[40px] h-[40px]"
+                          alt=""
+                        />
+                        <div className="text-[#1967D2] space-y-4">
+                          <p>
+                            A 5% conversion fee applies when converting rewards
+                            to cash.
+                          </p>
+                          <p>
+                            The amount will be credited to your wallet instantly
+                            and can be withdrawn or used for transactions.
+                          </p>
+                        </div>
+                      </div>
                     </div>
-
-                    <div className="flex items-center justify-between font-bold">
-                      <p>Final Credit Amount</p>
-                      <p>#4,750</p>
-                    </div>
-                  </div>
+                  </>
                 )}
 
                 {selected === "delivery" && (
-                  <div className="mt-5 border border-[#E1E1E1] p-4 rounded-xl space-y-3">
-                    <h1 className="text-xl font-bold">Delivery Address</h1>
+                  <>
+                    <div className="mt-5 border border-[#E1E1E1] p-4 rounded-xl space-y-3">
+                      <h1 className="text-xl font-bold">Delivery Address</h1>
 
-                    <div className="flex flex-col">
-                      <label>Home Address</label>
-                      <input
-                        type="text"
-                        placeholder="Enter your home address"
-                        className="p-2 bg-[#F0F0F0] focus:outline-none"
-                      />
+                      <div className="flex flex-col">
+                        <label>Home Address</label>
+                        <input
+                          type="text"
+                          placeholder="Enter your home address"
+                          className="p-2 bg-[#F0F0F0] focus:outline-none"
+                        />
+                      </div>
+
+                      <div className="flex flex-col">
+                        <label>City</label>
+                        <input
+                          type="text"
+                          placeholder="Enter your City"
+                          className="p-2 bg-[#F0F0F0] focus:outline-none"
+                        />
+                      </div>
+
+                      <div className="flex flex-col">
+                        <label>State</label>
+                        <input
+                          type="text"
+                          placeholder="Enter your State"
+                          className="p-2 bg-[#F0F0F0] focus:outline-none"
+                        />
+                      </div>
                     </div>
 
-                    <div className="flex flex-col">
-                      <label>City</label>
-                      <input
-                        type="text"
-                        placeholder="Enter your City"
-                        className="p-2 bg-[#F0F0F0] focus:outline-none"
-                      />
+                    <div className="py-4 pt-6">
+                      <div className="flex border bg-[#1967D266] border-[#E1E1E1] p-4 rounded-xl space-x-4">
+                        <img
+                          src="src/assets/info.png"
+                          className="w-[40px] h-[40px]"
+                          alt=""
+                        />
+                        <div className="text-[#1967D2] space-y-4">
+                          <p className="text-lg">Delivery fee: #1,500</p>
+                          <p className="text-md">
+                            Delivery fee will be deducted from your wallet upon
+                            confirmation
+                          </p>
+                        </div>
+                      </div>
                     </div>
-
-                    <div className="flex flex-col">
-                      <label>State</label>
-                      <input
-                        type="text"
-                        placeholder="Enter your State"
-                        className="p-2 bg-[#F0F0F0] focus:outline-none"
-                      />
-                    </div>
-                  </div>
+                  </>
                 )}
 
                 {selected === "pickup" && (
@@ -176,25 +217,6 @@ function RewardDetails() {
                     </div>
                   </div>
                 )}
-              </div>
-            </div>
-
-            <div className="py-4 pt-6">
-              <div className="flex border bg-[#1967D266] border-[#E1E1E1] p-4 rounded-xl space-x-4">
-                <img
-                  src="src/assets/info.png"
-                  className="w-[40px] h-[40px]"
-                  alt=""
-                />
-                <div className="text-[#1967D2] space-y-4">
-                  <p>
-                    A 5% conversion fee applies when converting rewards to cash.
-                  </p>
-                  <p>
-                    The amount will be credited to your wallet instantly and can
-                    be withdrawn or used for transactions.
-                  </p>
-                </div>
               </div>
             </div>
 
