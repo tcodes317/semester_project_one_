@@ -70,7 +70,7 @@ function Dashboard() {
           </div>
           <div className="xl:w-[360px] lg:w-[425px] lg:block hidden"></div>
           <main className="relative block w-[100%]">
-            <div className="flex lg:fixed lg:right-0 xl:w-[1010px] lg:w-[730px] xl:w-[1150px] 2xl:w-[1520px] lg:bg-[#fff] lg:z-5 items-center p-3 justify-between">
+            <div className="flex bg-[#FFFBF6] lg:fixed lg:right-0 xl:w-[1010px] lg:w-[730px] xl:w-[1150px] 2xl:w-[1520px] lg:bg-[#fff] lg:z-5 items-center p-3 justify-between">
               <div className="">
                 <img className="lg:hidden" src="src/assets/logoo.png" alt="" />
               </div>

@@ -28,7 +28,7 @@ export default function ShoppingCart() {
   return (
     <>
       <div className="bg-[#0A064033] h-[100vh] overflow-y-scroll">
-        <div className="p-6 bg-[#fff] pb-24 w-[1050px] float-right font-sans">
+        <div className="p-6 bg-[#fff] pb-24 lg:w-[1050px] w-[345px] float-right font-sans">
           <h2 className="text-xl font-semibold mb-4 flex items-center space-x-4">
             <img src="src/assets/exit.png" alt="" />{" "}
             <span>Shopping Cart ({items.length} items)</span>
@@ -39,16 +39,18 @@ export default function ShoppingCart() {
             {items.map((item) => (
               <div
                 key={item.id}
-                className="flex items-center gap-4 bg-white p-4 rounded-xl shadow"
+                className="flex items-center gap-4 bg-white p-4 justify-between rounded-xl shadow"
               >
-                <div className="bg-gray-200 w-24 h-24 rounded-xl"></div>
+                <div className="space-y-4 lg:flex lg:space-x-6">
+                  <div className="bg-gray-200 w-24 h-24 rounded-xl"></div>
 
-                <div className="flex-1">
-                  <h3 className="font-semibold text-sm">{item.name}</h3>
-                  <p className="text-xs text-gray-500">50kg bag</p>
-                  <p className="font-bold mt-1 text-sm">
-                    ₦{item.price.toLocaleString()}
-                  </p>
+                  <div className="flex-1">
+                    <h3 className="font-semibold text-sm">{item.name}</h3>
+                    <p className="text-xs text-gray-500">50kg bag</p>
+                    <p className="font-bold mt-1 text-sm">
+                      ₦{item.price.toLocaleString()}
+                    </p>
+                  </div>
                 </div>
 
                 <div className="flex items-end flex-col gap-4">

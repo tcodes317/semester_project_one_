@@ -2,6 +2,7 @@ import Slider from "./Slider";
 import { useState } from "react";
 import ProductDetails from "./ProduceDetails";
 import men from "./../assets/menu.png";
+import ShoppingCart from "./ShoppingCart";
 
 function FoodstuffMarket() {
   const items = Array.from({ length: 6 }).map((_, i) => ({
@@ -14,8 +15,13 @@ function FoodstuffMarket() {
   const [page, setPage] = useState(1);
   return (
     <>
-      <div className="fixed z-10 top-20 right-0 w-[100%] h-[100vh] hiddn">
-        <ProductDetails />
+      <div className="fixed z-40 top-20 md:top-0 right-0 w-[100%] h-[100vh] hiddn">
+        <div className="hidden">
+          <ProductDetails />
+        </div>
+        <div>
+          <ShoppingCart />
+        </div>
       </div>
       <div className="relative">
         <div className="flex">
