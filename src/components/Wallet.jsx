@@ -108,7 +108,7 @@ function Wallet() {
           <div className="hidden">
             <ConfirmWithdrawal />
           </div>
-          <div className="">
+          <div className="hidden">
             <WithdrawalSuccess />
           </div>
         </div>

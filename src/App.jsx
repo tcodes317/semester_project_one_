@@ -27,7 +27,7 @@ import WithdrawModal from "./components/WithdrawModalII.jsx";
 import TransactionModalI from "./components/WithdrawModelIII.jsx";
 import ConfirmWithdrawal from "./components/ConfirmWithdrawal.jsx";
 import WithdrawalSuccess from "./components/WithdrawalSuccess.jsx";
-import FoodstuffMarket from "./components/Foodstuff Marketplace.jsx";
+import FoodstuffMarket from "./components/FoodstuffMarketplace.jsx";
 import ProductDetails from "./components/ProduceDetails.jsx";
 import ShoppingCart from "./components/ShoppingCart.jsx";
 import DeliveryDetails from "./components/DeliveryDetails.jsx";
