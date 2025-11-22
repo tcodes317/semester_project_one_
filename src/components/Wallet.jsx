@@ -83,7 +83,7 @@ function Wallet() {
         </div>
       )} */}
       <div className="relative">
-        <div className="absolute hiden">
+        <div className="absolute hidden">
           <div className="hidden">
             <TransactionDetails />
           </div>
@@ -96,9 +96,10 @@ function Wallet() {
           <div className="hidden">
             <WithdrawMoney />
           </div>
-          <div className="">
+          <div className="hidden">
             <WithdrawModal />
           </div>
+          <div></div>
         </div>
         <div className="flex min-h-screen">
           <div className="lg:w-[300px] hidden lg:block lg:fixed bg-[#fff] z-10 absolute lg:block fixed bg-white">
