@@ -77,3 +77,8 @@ body {
     height: 1100px;
   }
 }
+@media (min-width: 767px) and (max-width: 769px) {
+  #wq {
+    height: 1155px;
+  }
+}

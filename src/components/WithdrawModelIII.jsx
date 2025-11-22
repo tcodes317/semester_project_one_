@@ -32,7 +32,10 @@ function TransactionModal({ onClose }) {
   ];
 
   return (
-    <div className="fixed w-[100%] h-[100vh] bg-[#c5c4cecc] flex justify-center items-center z-50 px-4">
+    <div
+      id="wq"
+      className="fixed w-[100%] h-[100vh] bg-[#c5c4cecc] flex justify-center items-center z-50 px-4"
+    >
       <div className="bg-white w-[500px] rounded-xl p-6 shadow-lg">
         <div className="flex justify-between items-center">
           <h3 className="text-lg font-semibold">Withdraw Money</h3>
@@ -90,15 +93,15 @@ function TransactionModal({ onClose }) {
             Add New Bank
           </Link>
         </div>
-        <div className="float-right space-x-4 gap-4 mt-6">
+        <div className="float-right flex md:space-x-4 gap-4 mt-6">
           <button
-            className="px-8 py-2 bg-[#FFE8CE] rounded-full text-gray-700"
+            className="md:px-8 md:py-2 p-2 px-5 bg-[#FFE8CE] rounded-full text-gray-700"
             onClick={onClose}
           >
             Cancel
           </button>
 
-          <button className="px-6 py-2 bg-orange-500 text-white rounded-full">
+          <button className="md:px-6 p-2 px-4 whitespace-nowrap md:py-2 bg-orange-500 text-white rounded-full">
             Proceed to withdraw
           </button>
         </div>
