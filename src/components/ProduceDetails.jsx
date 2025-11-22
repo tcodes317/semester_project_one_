@@ -5,9 +5,9 @@ export default function ProductDetails() {
   const price = 85000;
 
   return (
-    <div className="bg-[#0A064033] w-[100%] h-[100vh]">
-      <div className="p-6 bg-[#fff] float-right h-[100vh] overflow-y-scroll max-w-5xl mx-auto font-sans">
-        <h2 className="text-xl border-b-1 border-[#D9D9D9] pb-4 font-semibold mb-6 flex items-center space-x-8 gap-2">
+    <div className="bg-[#0A064033] w-[100%] md:h-[100vh]">
+      <div className="p-6 bg-[#fff] float-right h-[800px] md:h-[100vh] overflow-y-scroll max-w-5xl mx-auto font-sans">
+        <h2 className="text-xl flex-col md:flex-row border-b-1 border-[#D9D9D9] pb-4 font-semibold mb-6 flex items-start md:items-center space-x-8 gap-2">
           <img src="src/assets/exit.png" alt="" /> <span>Product Details</span>
         </h2>
 

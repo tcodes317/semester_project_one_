@@ -14,7 +14,7 @@ function FoodstuffMarket() {
   const [page, setPage] = useState(1);
   return (
     <>
-      <div className="fixed z-10 top-0 right-0 w-[100%] h-[100vh] hidden">
+      <div className="fixed z-10 top-20 right-0 w-[100%] h-[100vh] hiddn">
         <ProductDetails />
       </div>
       <div className="relative">
