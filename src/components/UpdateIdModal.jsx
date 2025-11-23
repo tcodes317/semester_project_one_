@@ -17,8 +17,8 @@ export default function UploadIDModal({ onClose }) {
   };
 
   return (
-    <div className="fixed inset-0 bg-black/40 flex items-center justify-center z-50 p-4">
-      <div className="bg-white w-full max-w-xl rounded-2xl shadow-lg p-6 relative">
+    <div className="fixed inset-0 bg-[#000]/40 flex items-center justify-center z-50 p-4">
+      <div className="bg-white w-full max-w-xl overflow-y-scroll lg:h-[550px] xl:h-auto xl:overflow-y-auto rounded-2xl shadow-lg p-6 relative">
         <div className="flex justify-between items-center pb-3">
           <h2 className="text-lg font-semibold">Upload ID Document</h2>
           <button className="text-xl" onClick={onClose}>

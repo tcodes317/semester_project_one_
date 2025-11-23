@@ -67,10 +67,13 @@ export default function SelfieVerificationModal() {
   };
 
   return (
-    <div className="w-full h-screen flex justify-center items-center bg-[#0A064033] p-6">
+    <div className="w-full h-screen flex justify-center items-center fixed bg-[#0A064033] p-6">
       <Toaster />
 
-      <div className="w-[400px] max-w-xl bg-white shadow-xl rounded-2xl p-6 relative">
+      <div
+        id="cam"
+        className="w-[400px] px-3 max-w-xl bg-white shadow-xl rounded-2xl p-6 relative"
+      >
         <div className="flex items-center justify-between">
           <h2 className="text-xl font-semibold text-gray-900 mb-4">
             Selfie Verification
@@ -132,7 +135,7 @@ export default function SelfieVerificationModal() {
             disabled={!capturedImage}
             className={`px-6 py-3 rounded-full w-1/2 ml-2 font-medium text-white ${
               capturedImage
-                ? "bg-orange-500 hover:bg-orange-600"
+                ? "bg-[#FF8801]"
                 : "bg-orange-300 cursor-not-allowed"
             }`}
           >

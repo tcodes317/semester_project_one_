@@ -97,3 +97,9 @@ body {
     height: 100vh;
   }
 }
+@media (min-width: 373px) and (max-width: 376px) {
+  #cam {
+    overflow-y: scroll;
+    height: 650px;
+  }
+}
