@@ -1,24 +1,33 @@
 import { Mail, Phone, BadgeCheck, IdCard, CalendarDays } from "lucide-react";
 import Slider from "./Slider";
 import EditProfile from "./EditProfile";
+import { useState } from "react";
 
 export default function Profile() {
-  const user = {
+  const [user, setUser] = useState({
     name: "Michael Adebayo",
     email: "tcodes317@example.com",
     phone: "+234 803 774 9313",
     joined: "Nov 11, 2025",
     avatar: "src/assets/avatar.png",
     verified: true,
-  };
+  });
+
+  const [showEdit, setShowEdt] = useState(false);
 
   return (
     <>
-      <div className="relative">
-        <div className="absolute w-full z-50">
-          <div className="hidden">
-            <EditProfile />
-          </div>
+      <div className="relative" id="wes">
+        <div
+          className={`absolute w-full z-50 ${
+            showEdit ? "" : "pointer-events-none"
+          }`}
+        >
+          {showEdit && (
+            <div className="pointer-events-auto" id="editPro">
+              <EditProfile user={user} setUser={setUser} />
+            </div>
+          )}
         </div>
         <div className="flex">
           <div className="hidden lg:block lg:fixed bg-[#fff] z-10 absolute lg:block fixed bg-white">
@@ -82,8 +91,10 @@ export default function Profile() {
                     </div>
                   </div>
                 </div>
-
-                <button className="mt-0 shadow-sm px-5 py-2 rounded-full hover:bg-gray-100 transition">
+                <button
+                  onClick={() => setShowEdt(!showEdit)}
+                  className="mt-0 shadow-sm px-5 py-2 rounded-full hover:bg-gray-100 transition"
+                >
                   Edit Profile
                 </button>
               </div>

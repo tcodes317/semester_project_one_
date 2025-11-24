@@ -1,38 +1,75 @@
 import Slider from "./Slider";
 import { X } from "lucide-react";
 import { Link } from "react-router-dom";
+import toast, { Toaster } from "react-hot-toast";
+import { useRef } from "react";
 
-function EditProfile() {
+function EditProfile({ user, setUser }) {
+  const nameRef = useRef();
+  const emailRef = useRef();
+  const phoneRef = useRef();
+
+  const handleSave = () => {
+    if (
+      nameRef.current.value.trim() === "" ||
+      emailRef.current.value.trim() === "" ||
+      phoneRef.current.value.trim() === ""
+    ) {
+      toast.error("All fields are required");
+      return;
+    }
+
+    setUser({
+      ...user,
+      name: nameRef.current.value,
+      email: emailRef.current.value,
+      phone: phoneRef.current.value,
+    });
+
+    toast.success("Successfully updated!");
+  };
+
   return (
     <>
-      <div className="relative">
+      <Toaster />
+      <div className="relative" id="qwa">
         <div className="bg-[#0A064033] flex items-center justify-center w-[100%] h-[100vh]">
           <div className="flex flex-col bg-[#fff] rounded-xl w-[500px] p-10 px-8">
             <div className="flex items-center border-b-1 pb-5 justify-between w-full">
               <h1>Edit Profile</h1>
-              <X></X>
+              <X
+                onClick={() => {
+                  document.getElementById("qwa").style = "display: none";
+                }}
+              ></X>
             </div>
+
             <div className="mt-4 space-y-6">
               <div className="flex flex-col">
-                <label for="">Full Name</label>
+                <label>Full Name</label>
                 <input
                   type="text"
+                  ref={nameRef}
                   className="w-full p-2 bg-[#FAFAFA] focus:outline-none p-4"
                   placeholder="Michael Adebayo"
                 />
               </div>
+
               <div className="flex flex-col">
-                <label for="">Email Address</label>
+                <label>Email Address</label>
                 <input
                   type="email"
+                  ref={emailRef}
                   className="w-full p-2 bg-[#FAFAFA] focus:outline-none p-4"
                   placeholder="@example.com"
                 />
               </div>
+
               <div className="flex flex-col">
-                <label for="">Phone Number</label>
+                <label>Phone Number</label>
                 <input
                   type="tel"
+                  ref={phoneRef}
                   placeholder="+234"
                   className="w-full bg-[#FAFAFA] focus:outline-none p-4"
                 />
@@ -41,12 +78,15 @@ function EditProfile() {
 
             <div className="space-x-4 flex items-center justify-between">
               <div></div>
-              <div className="space-x-6">
+
+              <div className="space-x-4 mt-8">
                 <Link to="" className="p-2 px-6 rounded-full bg-[#FFE8CE]">
                   Cancel
                 </Link>
+
                 <Link
                   to=""
+                  onClick={handleSave}
                   className="p-2 px-8 text-white rounded-full bg-[#FF8801]"
                 >
                   Save Changes
