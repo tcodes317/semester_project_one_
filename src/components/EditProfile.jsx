@@ -40,8 +40,8 @@ function EditProfile({ user, setUser }) {
     <>
       <Toaster />
       <div className="relative" id="qwa">
-        <div className="bg-[#0A064033] flex items-center justify-center w-[100%] h-[100vh]">
-          <div className="flex flex-col bg-[#fff] rounded-xl w-[500px] p-10 px-8">
+        <div className="bg-[#0A064033] fixed flex items-center justify-center w-[100%] h-[100vh]">
+          <div className="flex flex-col bg-[#fff] rounded-xl px-4 md:w-[500px] p-10 px-8">
             <div className="flex items-center border-b-1 pb-5 justify-between w-full">
               <h1>Edit Profile</h1>
               <X
@@ -86,15 +86,14 @@ function EditProfile({ user, setUser }) {
             <div className="space-x-4 flex items-center justify-between">
               <div></div>
 
-              <div className="space-x-4 mt-8">
+              <div className="space-x-4 mt-8 flex items-center">
                 <Link to="" className="p-2 px-6 rounded-full bg-[#FFE8CE]">
                   Cancel
                 </Link>
-
                 <Link
                   to=""
                   onClick={handleSave}
-                  className="p-2 px-8 text-white rounded-full bg-[#FF8801]"
+                  className="p-2 px-8 whitespace-nowrap text-white rounded-full bg-[#FF8801]"
                 >
                   Save Changes
                 </Link>
