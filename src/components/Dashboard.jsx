@@ -1,11 +1,14 @@
 import { Link } from "react-router-dom";
 import Slider from "./Slider";
 import { useMemo } from "react";
+import { useState } from "react";
 // import { ClipLoader } from "react-spinners";
 
 function Dashboard() {
   const Amount = ["5000", "18000", "2000", "3,500", "3,500"];
   const status = ["Success", "Delivered", "Completed", "Declined"];
+
+  const [open, setOpen] = useState(false);
 
   const statusStyles = {
     Success: "bg-green-100 text-green-700",
@@ -65,7 +68,12 @@ function Dashboard() {
       )} */}
       <div className="relative">
         <div className="flex">
-          <div className="hdden lg:block lg:fixed bg-[#000] z-10 absolute lg:block fixed h-[100vh]">
+          <div
+            id="slide"
+            className={`${
+              open ? "block" : "hidden"
+            } lg:block lg:fixed bg-[#000] z-10 absolute lg:block fixed h-[100vh]`}
+          >
             <Slider />
           </div>
           <div className="xl:w-[360px] lg:w-[425px] lg:block hidden"></div>
@@ -87,8 +95,15 @@ function Dashboard() {
                     <span>email@gmail.com</span>
                   </div>
                 </div>
-                <div className="bg-[#FF8801] lg:hidden rounded-lg flex items-center justify-center w-[48px] h-[48px]">
-                  <img src="src/assets/menu.png" alt="" />
+                <div
+                  onClick={() => setOpen(!open)}
+                  className="bg-[#FF8801] lg:hidden rounded-lg flex items-center justify-center w-[48px] h-[48px]"
+                >
+                  {open ? (
+                    <i className="fa fa-times text-white"></i>
+                  ) : (
+                    <img src="src/assets/menu.png" alt="" />
+                  )}
                 </div>
               </div>
             </div>
