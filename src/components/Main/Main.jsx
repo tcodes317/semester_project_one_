@@ -96,9 +96,9 @@ function Main() {
             </div>
             <div>
               <img
-                src=""
+                src="src/assets/upcomingPayment.png"
                 alt=""
-                className="lg:w-[555px] md:w-[550px] md:h-[250px] h-[300px] w-[100%] bg-[#AA9696] lg:h-[300px] lg:bg-[#AA9696]"
+                className="lg:w-[555px] md:w-[550px] w-[100%]"
               />
             </div>
           </div>
@@ -145,9 +145,9 @@ function Main() {
             </div>
             <div>
               <img
-                src=""
+                src="src/assets/FoodHamperGift.png"
                 alt=""
-                className="lg:w-[555px] w-[555px] h-[300px] bg-[#AA9696] lg:h-[300px] lg:bg-[#AA9696]"
+                className=""
               />
             </div>
           </div>
@@ -179,9 +179,9 @@ function Main() {
             </div>
             <div>
               <img
-                src=""
+                src="src/assets/ShoppingCart.png"
                 alt=""
-                className="lg:w-[555px] lg:h-[300px] lg:bg-[#AA9696]"
+                className=""
               />
             </div>
           </div>

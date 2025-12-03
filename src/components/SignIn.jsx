@@ -134,8 +134,8 @@ function SignIn() {
               </div>
               <div className="lg:w-full 4xl:hidden hidden lg:block">
                 <img
-                  src=""
-                  className="w-[555px] xl:w-[650px] md:w-full md:h-[500px] lg:w-[550px] lg:mx-auto h-[404px] lg:h-[300px] bg-[#AA9696]"
+                  src="src/assets/fds.png"
+                  className=""
                   alt=""
                 />
               </div>

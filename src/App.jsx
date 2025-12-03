@@ -52,6 +52,7 @@ import EditProfile from "./components/EditProfile.jsx";
 import Notifications from "./components/Notification.jsx";
 import GenerateReferralCode from "./components/GenerateReferralCode.jsx";
 import ReferralCode from "./components/ReferralCode.jsx";
+import Admin from "./Admin.jsx";
 
 function App() {
   return (
@@ -123,6 +124,10 @@ function App() {
           element={<GenerateReferralCode />}
         />
         <Route path="/referralcode" element={<ReferralCode />} />
+
+        {/** Admin Portal */}
+
+        <Route path="/admin/*" element={<Admin />} />
       </Routes>
     </div>
   );

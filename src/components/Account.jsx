@@ -125,8 +125,8 @@ function Account() {
             </div>
             <div className="mb-12 md:mb-24 xl:w-full lg:mb-0">
               <img
-                src=""
-                className="w-[555px] md:w-[700px] xl:w-full xl:h-[400px] md:h-[550px] lg:w-[435px] lg:h-[300px] h-[404px] bg-[#AA9696]"
+                src="src/assets/humanoid.png"
+                className=""
                 alt=""
               />
             </div>
