@@ -105,3 +105,18 @@ body {
     height: 650px;
   }
 }
+#ani {
+  animation-name: l;
+  animation-iteration-count: 1;
+  animation-direction: alternate-reverse;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+@keyframes l {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(100px);
+  }
+}

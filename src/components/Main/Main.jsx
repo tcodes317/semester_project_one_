@@ -27,7 +27,7 @@ function Main() {
       )}
       <div className="lg:relative pt-25 xl:pt-0 lg:pt-0 lg:mx-auto lg:space-y-24 lg:mb-82">
         <section className="lg:flex pt-8 lg:items-center xl:px-18 lg:px-10 bg-[#FBFBFB] lg:justify-between lg:py-15">
-          <div className="lg:space-y-8 space-y-6 pl-3 md:space-y-10">
+          <div id="ani" className="lg:space-y-8 space-y-6 pl-3 md:space-y-10">
             <div className="flex justify-center xl:justify-start">
               <h1 className="lg:text-6xl md:text-6xl xl:text-left md:text-center text-left font-bold text-4xl lg:font-bold lg:font-[Outfit]">
                 Save together, <br /> grow together
@@ -144,11 +144,7 @@ function Main() {
               </div>
             </div>
             <div>
-              <img
-                src="src/assets/FoodHamperGift.png"
-                alt=""
-                className=""
-              />
+              <img src="src/assets/FoodHamperGift.png" alt="" className="" />
             </div>
           </div>
         </section>
@@ -178,11 +174,7 @@ function Main() {
               </div>
             </div>
             <div>
-              <img
-                src="src/assets/ShoppingCart.png"
-                alt=""
-                className=""
-              />
+              <img src="src/assets/ShoppingCart.png" alt="" className="" />
             </div>
           </div>
         </section>
