@@ -4,6 +4,8 @@ import toast from "react-hot-toast";
 import { useState } from "react";
 import imgone from "./../../assets/1.png";
 import imgtwo from "./../../assets/upcomingPayment.png";
+import imgthree from "./../../assets/FoodHamperGift.png";
+import imgfour from "./../../assets/ShoppingCart.png";
 
 function Main() {
   const [isLoading, setIsLoading] = useState(false);
@@ -146,7 +148,7 @@ function Main() {
               </div>
             </div>
             <div>
-              <img src="src/assets/FoodHamperGift.png" alt="" className="" />
+              <img src={imgthree} alt="" className="" />
             </div>
           </div>
         </section>
@@ -176,7 +178,7 @@ function Main() {
               </div>
             </div>
             <div>
-              <img src="src/assets/ShoppingCart.png" alt="" className="" />
+              <img src={imgfour} alt="" className="" />
             </div>
           </div>
         </section>
