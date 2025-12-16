@@ -6,6 +6,7 @@ import imgone from "./../../assets/1.png";
 import imgtwo from "./../../assets/upcomingPayment.png";
 import imgthree from "./../../assets/FoodHamperGift.png";
 import imgfour from "./../../assets/ShoppingCart.png";
+import imgfive from "./../../assets/3.png";
 
 function Main() {
   const [isLoading, setIsLoading] = useState(false);
@@ -259,11 +260,7 @@ function Main() {
         </section>
         <section className="px-4 py-24  lg:px-0 lg:w-[90%] md:px-10 lg:mx-auto">
           <div className="lg:flex 2xl:pt-8 space-y-6 lg:items-center">
-            <img
-              className="w-[1050px] lg:w-[500px]"
-              src="src/assets/3.png"
-              alt=""
-            />
+            <img className="w-[1050px] lg:w-[500px]" src={imgfive} alt="" />
             <div className="lg:flex lg:space-y-4 xl:py-18 lg:flex-col xl:py-12 2xl:py-8 lg:relative lg:bottom-3 2xl:w-full lg:bg-[#FFE8CE] lg:text-left xl:p-18 lg:p-10 lg:py-16">
               <h1 className="xl:text-5xl md:text-5xl text-start text-4xl text-center font-bold 2xl:text-6xl xl:px-0 2xl:px-4 2xl:w-[600px] lg:text-4xl lg:font-bold">
                 Join Thousands on the Path to Financial Freedom.
