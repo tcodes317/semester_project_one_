@@ -2,6 +2,8 @@ import { Link, useNavigate } from "react-router-dom";
 import { ClipLoader } from "react-spinners";
 import toast from "react-hot-toast";
 import { useState } from "react";
+import imgone from "./../../assets/1.png";
+import imgtwo from "./../../assets/upcomingPayment.png";
 
 function Main() {
   const [isLoading, setIsLoading] = useState(false);
@@ -60,7 +62,7 @@ function Main() {
             </div>
           </div>
           <div className="mt-5 lg:mt-0 lg:w-[500px]">
-            <img src="./src/assets/1.png" alt="" className="md:mx-auto" />
+            <img src={imgone} alt="" className="md:mx-auto" />
           </div>
         </section>
         <section className="lg:relative pt-18 px-4 xl:px-6 md:px-10 lg:px-0 lg:w-[90%] lg:mx-auto">
@@ -96,7 +98,7 @@ function Main() {
             </div>
             <div>
               <img
-                src="src/assets/upcomingPayment.png"
+                src={imgtwo}
                 alt=""
                 className="lg:w-[555px] md:w-[550px] w-[100%]"
               />

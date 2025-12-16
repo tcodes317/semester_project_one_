@@ -1,4 +1,3 @@
-// import { logo } from "./../../";
 import { Link, useNavigate } from "react-router-dom";
 import { ClipLoader } from "react-spinners";
 import { useState } from "react";
@@ -60,7 +59,6 @@ function Header() {
         >
           <div className="lg:flex relative lg:static flex items-center justify-between p-4 lg:items-center lg:justify-between">
             <div className="lg:flex lg:items-center">
-              {/* <img src="./src/assets/2.png" alt="error loading ..." /> */}
               <img src={logo} alt="error loading ..." />
 
               <nav className="lg:ml-[20px] hidden xl:ml-[100px] lg:bg-[#FFFBF6] lg:flex lg:items-center lg:space-x-1 xl:space-x-6">
