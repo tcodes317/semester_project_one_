@@ -34,6 +34,17 @@ function Header() {
       navigate("/sign-in");
     }
   };
+  const home = async (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+
+    try {
+      await new Promise((resolve) => setTimeout(resolve, 2500));
+    } finally {
+      setIsLoading(false);
+      navigate("/");
+    }
+  };
   const contactUs = async (e) => {
     e.preventDefault();
     setIsLoading(true);
@@ -59,8 +70,9 @@ function Header() {
         >
           <div className="lg:flex relative lg:static flex items-center justify-between p-4 lg:items-center lg:justify-between">
             <div className="lg:flex lg:items-center">
-              <img src={imgone} alt="" />
-
+              <Link to="/" onClick={home}>
+                <img src={imgone} alt="" />
+              </Link>
               <nav className="lg:ml-[20px] hidden xl:ml-[100px] lg:bg-[#FFFBF6] lg:flex lg:items-center lg:space-x-1 xl:space-x-6">
                 <Link to="/" className="lg:p-4 lg:px-5 lg:block">
                   Services
