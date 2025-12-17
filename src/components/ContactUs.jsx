@@ -2,6 +2,11 @@ import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
 import { Link, useNavigate } from "react-router-dom";
 import { ClipLoader } from "react-spinners";
+import imgone from "./../assets/meg.png";
+import imgtwo from "./../assets/phone.png";
+import imgthree from "./../assets/facebookreal.png";
+import imgfour from "./../assets/twitterreal.png";
+import imgfive from "./../assets/linkedinreal.png";
 
 function ContactUs() {
   //   const [loading, isLoading] = useState(false);
@@ -29,13 +34,13 @@ function ContactUs() {
             <div className="lg:flex md:grid md:grid-cols-3 lg:mx-auto space-y-8 lg:flex-row lg:items-center flex-col items-center lg:space-x-72 lg:justify-center">
               <div className="lg:flex lg:items-center flex xl:static lg:relative lg:left-12 flex-col items-center space-y-2 lg:flex-col lg:space-y-2">
                 <div className="p-2 w-[30px] rounded-sm bg-[#FF8801]">
-                  <img src="src/assets/meg.png" alt="" />
+                  <img src={imgone} alt="" />
                 </div>
                 <span className="text-[#FF8801]">support@quickli.com</span>
               </div>
               <div className="lg:space-y-4 lg:flex lg:items-center flex flex-col items-center space-y-2 lg:items-center lg:flex-col">
                 <div className="p-2 w-[30px] rounded-sm bg-[#FF8801]">
-                  <img src="src/assets/phone.png" alt="" />
+                  <img src={imgtwo} alt="" />
                 </div>
                 <span className="text-[#FF8801] whitespace-nowrap block">
                   +234 80x xxx xxxx
@@ -44,13 +49,13 @@ function ContactUs() {
               <div className="lg:space-y-2 md:relative md:-top-4 xl:relative xl:right-0 lg:flex flex flex-col lg:relative lg:right-12 items-center space-y-2 lg:items-center lg:flex-col lg:space-y-2">
                 <div className="flex items-center space-x-2">
                   <div className="p-2 w-[30px] rounded-sm bg-[#ff8801]">
-                    <img src="src/assets/facebookreal.png" alt="" />
+                    <img src={imgthree} alt="" />
                   </div>
                   <div className="p-2 w-[30px] rounded-sm bg-[#ff8801]">
-                    <img src="src/assets/twitterreal.png" alt="" />
+                    <img src={imgfour} alt="" />
                   </div>
                   <div className="p-2 w-[30px] rounded-sm bg-[#ff8801]">
-                    <img src="src/assets/linkedinreal.png" alt="" />
+                    <img src={imgfive} alt="" />
                   </div>
                 </div>
                 <span className="text-[#ff8801]">Social Media</span>
