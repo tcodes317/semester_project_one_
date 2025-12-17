@@ -4,6 +4,7 @@ import Header from "./Header/Header";
 import toast from "react-hot-toast";
 import { useState } from "react";
 import Footer from "./Footer/Footer";
+import imgone from "./../assets/fds.png";
 import imgtwo from "./../assets/fds.png";
 
 function SignIn() {
@@ -47,7 +48,7 @@ function SignIn() {
         <div className="md:pt-18 px-6">
           <div className="md:mx-8 pt-42 lg:hidden">
             <img
-              src=""
+              src={imgone}
               className="w-[555px] md:w-full md:h-[500px] h-[350px] bg-[#AA9696]"
               alt=""
             />
