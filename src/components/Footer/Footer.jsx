@@ -4,6 +4,17 @@ import imgtwo from "./../../assets/twitter.png";
 import imgthree from "./../../assets/x.png";
 
 function Footer() {
+  const contactUs = async (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+
+    try {
+      await new Promise((resolve) => setTimeout(resolve, 2500));
+    } finally {
+      setIsLoading(false);
+      navigate("/contact-us");
+    }
+  };
   return (
     <>
       <div className="relative py-12 md:px-10 lg:py-10 bg-[#FFFBF6] lg:px-18 px-4">
@@ -26,7 +37,11 @@ function Footer() {
           <div className="flex items-center space-y-4 flex-col mt-8">
             <div className="flex items-center space-x-4">
               <h1 className="font-bold text-xl">Got any question?</h1>
-              <Link to="/" className="bg-[#FFE8CE] rounded-full p-3 px-5">
+              <Link
+                to="/"
+                onClick={contactUs}
+                className="bg-[#FFE8CE] rounded-full p-3 px-5"
+              >
                 <button>Contact Us</button>
               </Link>
             </div>
