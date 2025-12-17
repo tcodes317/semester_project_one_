@@ -49,7 +49,7 @@ function SignIn() {
           <div className="md:mx-8 pt-42 lg:hidden">
             <img
               src={imgone}
-              className="w-[555px] md:w-full md:h-[500px] h-[350px] bg-[#AA9696]"
+              className="w-[555px] md:w-full md:h-[500px] h-[350px] bg-[#AA9696] object-contain"
               alt=""
             />
           </div>
