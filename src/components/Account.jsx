@@ -5,6 +5,7 @@ import { useState } from "react";
 import { ClipLoader } from "react-spinners";
 import toast from "react-hot-toast";
 import SignIn from "./SignIn";
+import imgone from "./../assets/humanoid.png";
 
 function Account() {
   const navigate = useNavigate();
@@ -128,7 +129,7 @@ function Account() {
               </p>
             </div>
             <div className="mb-12 md:mb-24 xl:w-full lg:mb-0">
-              <img src="src/assets/humanoid.png" className="" alt="" />
+              <img src={imgone} className="" alt="" />
             </div>
           </div>
         </div>
