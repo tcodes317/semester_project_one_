@@ -149,7 +149,7 @@ function Header() {
                         How it works
                       </Link>
                       <Link
-                        to="/"
+                        to="#"
                         onClick={contactUs}
                         className="p-4 block bg-[#FFFBF6] text-black text-xl"
                       >

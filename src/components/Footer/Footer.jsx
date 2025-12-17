@@ -1,11 +1,15 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import imgone from "./../../assets/facebook.png";
 import imgtwo from "./../../assets/twitter.png";
 import imgthree from "./../../assets/x.png";
 import { useState } from "react";
+import { ClipLoader } from "react-spinners";
 
 function Footer() {
   const [isLoading, setIsLoading] = useState(false);
+
+  const navigate = useNavigate();
+
   const contactUs = async (e) => {
     e.preventDefault();
     setIsLoading(true);
@@ -19,6 +23,11 @@ function Footer() {
   };
   return (
     <>
+      {isLoading && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-white">
+          <ClipLoader color="#FF8801" size={60} />
+        </div>
+      )}
       <div className="relative py-12 md:px-10 lg:py-10 bg-[#FFFBF6] lg:px-18 px-4">
         <div className="lg:flex md:grid md:grid-cols-2 flex-col space-y-12 lg:space-y-0 lg:flex-row items-start lg:items-center justify-between">
           <div className="space-y-2">
@@ -40,11 +49,11 @@ function Footer() {
             <div className="flex items-center space-x-4">
               <h1 className="font-bold text-xl">Got any question?</h1>
               <Link
-                to="/"
+                to="#"
                 onClick={contactUs}
                 className="bg-[#FFE8CE] rounded-full p-3 px-5"
               >
-                <button>Contact Us</button>
+                Contact Us
               </Link>
             </div>
             <div>
