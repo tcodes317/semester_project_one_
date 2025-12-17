@@ -4,6 +4,7 @@ import Header from "./Header/Header";
 import toast from "react-hot-toast";
 import { useState } from "react";
 import Footer from "./Footer/Footer";
+import imgtwo from "./../assets/fds.png";
 
 function SignIn() {
   const [visible, setVisible] = useState(false);
@@ -133,11 +134,7 @@ function SignIn() {
                 </p>
               </div>
               <div className="lg:w-full 4xl:hidden hidden lg:block">
-                <img
-                  src="src/assets/fds.png"
-                  className=""
-                  alt=""
-                />
+                <img src={imgtwo} className="" alt="" />
               </div>
             </div>
           </div>
