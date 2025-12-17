@@ -150,6 +150,7 @@ function Header() {
                       </Link>
                       <Link
                         to="/"
+                        onClick={contactUs}
                         className="p-4 block bg-[#FFFBF6] text-black text-xl"
                       >
                         Contact Us
